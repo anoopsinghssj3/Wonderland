@@ -1,0 +1,41 @@
+<%- layout('layouts/boilerplate')%>
+
+    <body>
+
+        <h3>All Listings</h3>
+
+        <!-- <form method="GET" action="/listings/new">
+            <button>Create New Listing</button>
+        </form> -->
+
+        <div class="row row-cols-lg-3">
+            <% for(let listing of allListings) { %>
+                <div class=" card " style=" width: 18rem;">
+                    <img src="<%=listing.image%>" class="card-img-top" alt="listing-image">
+                    <!-- <div class="card-img-overlay">abc</div> -->
+                    <div class="card-body main-title">
+                        <p class="card-text ">
+                            <a href="/listings/<%= listing._id %>">
+                                <b>
+                                    <%= listing.title %>
+                                </b>
+                            </a> <br>
+                            <b> &#8377; <%= Number(listing.price).toLocaleString("en-IN") %></b> <br>
+                            </b> <br>
+
+                        <form class="delete-btn "
+                            action="http://localhost:3000/listings/<%=listing._id%>?_method=DELETE" method="POST">
+                            &emsp;
+                            <button class=" btn btn-danger">Delete</button>
+                        </form>
+                        </p>
+                    </div>
+
+
+                </div>
+                <% } %>
+
+        </div>
+
+
+    </body>
