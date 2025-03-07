@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar {
+    height: 4rem;
+}
+
+.fa-compass {
+    font-size: 2.5rem;
+    color: rgb(235, 139, 13);
+}
+
+footer {
+    position: relative !important;
+    background-color: rgba(197, 193, 193, 0.928);
+    top: 3rem !important;
+}
+
+.f-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: space-evenly;
+    text-align: center;
+}
+
+.f-info-links,
+.f-info-socials {
+    width: 100%;
+}
+
+.f-info-socials {
+    font-size: 1.2rem;
+}
+
+.f-info-socials i {
+    margin-right: 1rem;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+/* card */
+.listing-card {
+    margin-bottom: 2rem;
+    height: 200px !important;
+    padding: 0 !important;
+    margin-left: 50px;
+    font-size: 0.9rem;
+    border: none !important;
+}
+
+.listing-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.listing-card img {
+    height: 75% !important;
+    width: 100% !important;
+}
+
+/* title main  */
+.main-title {
+    position: relative;
+    bottom: 15px;
+}
+
+.row {
+    overflow: hidden !important;
+}
+
+/* show image */
+.card .show-img {
+    height: 28vh !important;
+    border-radius: 10px !important;
+    border: none;
+}
+
+/* show image card info */
+.card .card-body-new {
+    margin-bottom: 1rem !important;
+    border-radius: 0.5rem;
+}
+
+.card .card-body-new p {
+    position: relative;
+    bottom: 1rem;
+}
+
+.card .card-body-new .card-text {
+    width: 28rem !important;
+}
+
+.btns-grp{
+    display: flex;
+}
