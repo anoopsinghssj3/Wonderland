@@ -7,7 +7,7 @@ const multer = require("multer");
 const { storage } = require("../cloudConfig.js")
 const upload = multer({ dest: "uploads/"});
 
-// all listings , added listing
+// all listings , added listing for index
 router.route("/")
     .get(wrapAsync(listingController.index))
     .post(
